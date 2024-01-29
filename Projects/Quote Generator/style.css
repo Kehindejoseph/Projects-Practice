@@ -1,0 +1,114 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #bbc6fa;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1552cd, #43224b);
+    padding: 10px;
+}
+
+.quote-box{
+    background: #fff;
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    border: solid #fff;
+}
+
+.quote-box h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.quote-box h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.quote-box blockquote {
+    font-size: 26px;
+    min-height: 110px;
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after {
+    content: '"';
+}
+
+.quote-box span {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.quote-box span::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.quote-box div {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-box button {
+    background: rgb(23, 124, 229);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 2px solid rgb(23, 124, 229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quote-btn:hover {
+    background: #2d455b;
+    border: 2px solid #2d455b
+}
+.quote-box button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.quote-box button:nth-child(2) {
+    background: transparent;
+    color: #333;
+}
+
+.quote-box button:nth-child(2):hover{
+    background:  #c4d6e7;
+    border: 2px solid #c4d6e7
+}
